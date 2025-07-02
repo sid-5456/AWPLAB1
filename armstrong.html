@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Armstrong Number</title>
+    </head>
+    <body>
+        <script>
+            let num = prompt("Enter a number:");
+            let sum = 0;
+            let temp = num;
+            let length = num.length;
+
+            for (let i = 0; i < length; i++) {
+                sum += Math.pow(temp[i], length);
+            }
+
+            if (sum == num) {
+                document.writeln(num + " is an Armstrong number");
+            } else {
+                document.writeln(num + " is not an Armstrong number");
+            }
+        </script>
+    </body>
+</html>
